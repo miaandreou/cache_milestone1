@@ -1,0 +1,1862 @@
+R	3
+ READ	3	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:0 1 1 
+M	4
+ MODIFY	4
+00000000000000000000000000000100
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:1 0 0 
+R	12
+ READ	12	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 0 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:1 0 0 
+M	14
+ MODIFY	14
+00000000000000000000000000001110
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:1 1 0 
+M	16
+ MODIFY	16
+00000000000000000000000000010000
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:0 0 0 
+R	17
+ READ	17	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:0 0 1 
+R	27
+ READ	27	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 1 1 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:0 1 1 
+R	11
+ READ	11	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 1 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:0 1 1 
+F
+FLUSH
+M	27
+ MODIFY	27
+00000000000000000000000000011011
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:0 1 1 
+W	7
+ WRITE	7
+00000000000000000000000000000111
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:1 1 1 
+W	30
+ WRITE	30
+00000000000000000000000000011110
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:1 1 0 
+R	4
+ READ	4	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:1 0 0 
+M	13
+ MODIFY	13
+00000000000000000000000000001101
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:1 0 1 
+W	6
+ WRITE	6
+00000000000000000000000000000110
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:1 1 0 
+F
+FLUSH
+F
+FLUSH
+M	19
+ MODIFY	19
+00000000000000000000000000010011
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:0 1 1 
+M	13
+ MODIFY	13
+00000000000000000000000000001101
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:1 0 1 
+W	3
+ WRITE	3
+00000000000000000000000000000011
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:0 1 1 
+F
+FLUSH
+F
+FLUSH
+M	31
+ MODIFY	31
+00000000000000000000000000011111
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:1 1 1 
+F
+FLUSH
+M	29
+ MODIFY	29
+00000000000000000000000000011101
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:1 0 1 
+R	24
+ READ	24	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 0 0 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:0 0 0 
+R	31
+ READ	31	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:1 1 1 
+R	20
+ READ	20	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 0 0 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:1 0 0 
+F
+FLUSH
+W	22
+ WRITE	22
+00000000000000000000000000010110
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:1 1 0 
+R	5
+ READ	5	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:1 0 1 
+F
+FLUSH
+F
+FLUSH
+R	9
+ READ	9	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:0 0 1 
+M	28
+ MODIFY	28
+00000000000000000000000000011100
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:1 0 0 
+F
+FLUSH
+M	18
+ MODIFY	18
+00000000000000000000000000010010
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:0 1 0 
+W	26
+ WRITE	26
+00000000000000000000000000011010
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:0 1 0 
+W	14
+ WRITE	14
+00000000000000000000000000001110
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:1 1 0 
+W	24
+ WRITE	24
+00000000000000000000000000011000
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:0 0 0 
+M	29
+ MODIFY	29
+00000000000000000000000000011101
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:1 0 1 
+M	9
+ MODIFY	9
+00000000000000000000000000001001
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:0 0 1 
+M	22
+ MODIFY	22
+00000000000000000000000000010110
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:1 1 0 
+M	29
+ MODIFY	29
+00000000000000000000000000011101
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:1 0 1 
+R	28
+ READ	28	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 0 0 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:1 0 0 
+R	15
+ READ	15	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:1 1 1 
+W	18
+ WRITE	18
+00000000000000000000000000010010
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:0 1 0 
+W	0
+ WRITE	0
+00000000000000000000000000000000
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:0 0 0 
+M	16
+ MODIFY	16
+00000000000000000000000000010000
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:0 0 0 
+F
+FLUSH
+W	16
+ WRITE	16
+00000000000000000000000000010000
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:0 0 0 
+F
+FLUSH
+M	27
+ MODIFY	27
+00000000000000000000000000011011
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:0 1 1 
+R	2
+ READ	2	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:0 1 0 
+M	2
+ MODIFY	2
+00000000000000000000000000000010
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:0 1 0 
+R	29
+ READ	29	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 0 1 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:1 0 1 
+R	11
+ READ	11	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 1 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:0 1 1 
+F
+FLUSH
+M	16
+ MODIFY	16
+00000000000000000000000000010000
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:0 0 0 
+M	25
+ MODIFY	25
+00000000000000000000000000011001
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:0 0 1 
+M	25
+ MODIFY	25
+00000000000000000000000000011001
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:0 0 1 
+M	29
+ MODIFY	29
+00000000000000000000000000011101
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:1 0 1 
+R	12
+ READ	12	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 0 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:1 0 0 
+W	30
+ WRITE	30
+00000000000000000000000000011110
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:1 1 0 
+R	25
+ READ	25	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 0 1 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:0 0 1 
+R	9
+ READ	9	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:0 0 1 
+W	18
+ WRITE	18
+00000000000000000000000000010010
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:0 1 0 
+M	9
+ MODIFY	9
+00000000000000000000000000001001
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:0 0 1 
+W	19
+ WRITE	19
+00000000000000000000000000010011
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:0 1 1 
+F
+FLUSH
+F
+FLUSH
+M	31
+ MODIFY	31
+00000000000000000000000000011111
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:1 1 1 
+W	22
+ WRITE	22
+00000000000000000000000000010110
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:1 1 0 
+M	13
+ MODIFY	13
+00000000000000000000000000001101
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:1 0 1 
+W	14
+ WRITE	14
+00000000000000000000000000001110
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:1 1 0 
+M	3
+ MODIFY	3
+00000000000000000000000000000011
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:0 1 1 
+F
+FLUSH
+F
+FLUSH
+R	1
+ READ	1	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:0 0 1 
+F
+FLUSH
+R	15
+ READ	15	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:1 1 1 
+R	13
+ READ	13	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 1 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:1 0 1 
+R	30
+ READ	30	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 0 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:1 1 0 
+R	28
+ READ	28	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 0 0 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:1 0 0 
+M	18
+ MODIFY	18
+00000000000000000000000000010010
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:0 1 0 
+M	6
+ MODIFY	6
+00000000000000000000000000000110
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:1 1 0 
+R	16
+ READ	16	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:0 0 0 
+W	15
+ WRITE	15
+00000000000000000000000000001111
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:1 1 1 
+M	23
+ MODIFY	23
+00000000000000000000000000010111
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:1 1 1 
+M	23
+ MODIFY	23
+00000000000000000000000000010111
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:1 1 1 
+W	25
+ WRITE	25
+00000000000000000000000000011001
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:0 0 1 
+W	19
+ WRITE	19
+00000000000000000000000000010011
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:0 1 1 
+F
+FLUSH
+R	18
+ READ	18	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 0 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:0 1 0 
+M	19
+ MODIFY	19
+00000000000000000000000000010011
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:0 1 1 
+W	30
+ WRITE	30
+00000000000000000000000000011110
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:1 1 0 
+W	20
+ WRITE	20
+00000000000000000000000000010100
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:1 0 0 
+R	20
+ READ	20	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 0 0 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:1 0 0 
+F
+FLUSH
+W	4
+ WRITE	4
+00000000000000000000000000000100
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:1 0 0 
+R	30
+ READ	30	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 0 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:1 1 0 
+R	15
+ READ	15	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:1 1 1 
+M	2
+ MODIFY	2
+00000000000000000000000000000010
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:0 1 0 
+W	12
+ WRITE	12
+00000000000000000000000000001100
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:1 0 0 
+F
+FLUSH
+F
+FLUSH
+W	13
+ WRITE	13
+00000000000000000000000000001101
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:1 0 1 
+W	19
+ WRITE	19
+00000000000000000000000000010011
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:0 1 1 
+F
+FLUSH
+R	6
+ READ	6	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:1 1 0 
+R	29
+ READ	29	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 0 1 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:1 0 1 
+M	5
+ MODIFY	5
+00000000000000000000000000000101
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:1 0 1 
+W	23
+ WRITE	23
+00000000000000000000000000010111
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:1 1 1 
+F
+FLUSH
+W	1
+ WRITE	1
+00000000000000000000000000000001
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:0 0 1 
+F
+FLUSH
+W	14
+ WRITE	14
+00000000000000000000000000001110
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:1 1 0 
+F
+FLUSH
+W	0
+ WRITE	0
+00000000000000000000000000000000
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:0 0 0 
+W	1
+ WRITE	1
+00000000000000000000000000000001
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:0 0 1 
+R	30
+ READ	30	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 0 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:1 1 0 
+F
+FLUSH
+R	21
+ READ	21	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 0 1 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:1 0 1 
+F
+FLUSH
+F
+FLUSH
+F
+FLUSH
+M	31
+ MODIFY	31
+00000000000000000000000000011111
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:1 1 1 
+W	16
+ WRITE	16
+00000000000000000000000000010000
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:0 0 0 
+M	26
+ MODIFY	26
+00000000000000000000000000011010
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:0 1 0 
+W	20
+ WRITE	20
+00000000000000000000000000010100
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:1 0 0 
+M	17
+ MODIFY	17
+00000000000000000000000000010001
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:0 0 1 
+R	30
+ READ	30	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 0 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:1 1 0 
+R	21
+ READ	21	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 0 1 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:1 0 1 
+W	6
+ WRITE	6
+00000000000000000000000000000110
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:1 1 0 
+M	4
+ MODIFY	4
+00000000000000000000000000000100
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:1 0 0 
+M	19
+ MODIFY	19
+00000000000000000000000000010011
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:0 1 1 
+M	25
+ MODIFY	25
+00000000000000000000000000011001
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:0 0 1 
+M	15
+ MODIFY	15
+00000000000000000000000000001111
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:1 1 1 
+F
+FLUSH
+W	20
+ WRITE	20
+00000000000000000000000000010100
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:1 0 0 
+F
+FLUSH
+M	10
+ MODIFY	10
+00000000000000000000000000001010
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:0 1 0 
+W	23
+ WRITE	23
+00000000000000000000000000010111
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:1 1 1 
+W	22
+ WRITE	22
+00000000000000000000000000010110
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:1 1 0 
+M	22
+ MODIFY	22
+00000000000000000000000000010110
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:1 1 0 
+F
+FLUSH
+R	13
+ READ	13	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 1 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:1 0 1 
+M	4
+ MODIFY	4
+00000000000000000000000000000100
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:1 0 0 
+W	25
+ WRITE	25
+00000000000000000000000000011001
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:0 0 1 
+M	18
+ MODIFY	18
+00000000000000000000000000010010
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:0 1 0 
+F
+FLUSH
+R	3
+ READ	3	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:0 1 1 
+R	28
+ READ	28	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 0 0 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:1 0 0 
+W	5
+ WRITE	5
+00000000000000000000000000000101
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:1 0 1 
+F
+FLUSH
+W	8
+ WRITE	8
+00000000000000000000000000001000
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:0 0 0 
+M	11
+ MODIFY	11
+00000000000000000000000000001011
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:0 1 1 
+R	5
+ READ	5	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:1 0 1 
+W	25
+ WRITE	25
+00000000000000000000000000011001
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:0 0 1 
+R	23
+ READ	23	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 1 1 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:1 1 1 
+F
+FLUSH
+M	25
+ MODIFY	25
+00000000000000000000000000011001
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:0 0 1 
+M	13
+ MODIFY	13
+00000000000000000000000000001101
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:1 0 1 
+W	2
+ WRITE	2
+00000000000000000000000000000010
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:0 1 0 
+R	13
+ READ	13	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 1 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:1 0 1 
+W	20
+ WRITE	20
+00000000000000000000000000010100
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:1 0 0 
+R	10
+ READ	10	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 0 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:0 1 0 
+R	5
+ READ	5	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:1 0 1 
+W	1
+ WRITE	1
+00000000000000000000000000000001
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:0 0 1 
+W	20
+ WRITE	20
+00000000000000000000000000010100
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:1 0 0 
+R	27
+ READ	27	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 1 1 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:0 1 1 
+M	5
+ MODIFY	5
+00000000000000000000000000000101
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:1 0 1 
+R	8
+ READ	8	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:0 0 0 
+R	12
+ READ	12	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 0 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:1 0 0 
+M	9
+ MODIFY	9
+00000000000000000000000000001001
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:0 0 1 
+F
+FLUSH
+F
+FLUSH
+F
+FLUSH
+W	15
+ WRITE	15
+00000000000000000000000000001111
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:1 1 1 
+R	21
+ READ	21	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 0 1 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:1 0 1 
+R	26
+ READ	26	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 1 0 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:0 1 0 
+R	1
+ READ	1	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:0 0 1 
+F
+FLUSH
+R	0
+ READ	0	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:0 0 0 
+M	9
+ MODIFY	9
+00000000000000000000000000001001
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:0 0 1 
+W	26
+ WRITE	26
+00000000000000000000000000011010
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:0 1 0 
+F
+FLUSH
+M	2
+ MODIFY	2
+00000000000000000000000000000010
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:0 1 0 
+R	20
+ READ	20	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 0 0 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:1 0 0 
+F
+FLUSH
+M	7
+ MODIFY	7
+00000000000000000000000000000111
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:1 1 1 
+R	3
+ READ	3	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:0 1 1 
+R	21
+ READ	21	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 0 1 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:1 0 1 
+W	24
+ WRITE	24
+00000000000000000000000000011000
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:0 0 0 
+W	17
+ WRITE	17
+00000000000000000000000000010001
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:0 0 1 
+R	12
+ READ	12	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 0 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:1 0 0 
+R	6
+ READ	6	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:1 1 0 
+M	14
+ MODIFY	14
+00000000000000000000000000001110
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:1 1 0 
+R	16
+ READ	16	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:0 0 0 
+W	30
+ WRITE	30
+00000000000000000000000000011110
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:1 1 0 
+R	17
+ READ	17	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:0 0 1 
+F
+FLUSH
+M	5
+ MODIFY	5
+00000000000000000000000000000101
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:1 0 1 
+M	12
+ MODIFY	12
+00000000000000000000000000001100
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:1 0 0 
+F
+FLUSH
+W	7
+ WRITE	7
+00000000000000000000000000000111
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:1 1 1 
+R	24
+ READ	24	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 0 0 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:0 0 0 
+M	6
+ MODIFY	6
+00000000000000000000000000000110
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:1 1 0 
+R	9
+ READ	9	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:0 0 1 
+M	25
+ MODIFY	25
+00000000000000000000000000011001
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:0 0 1 
+M	22
+ MODIFY	22
+00000000000000000000000000010110
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:1 1 0 
+W	2
+ WRITE	2
+00000000000000000000000000000010
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:0 1 0 
+F
+FLUSH
+R	6
+ READ	6	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:1 1 0 
+F
+FLUSH
+M	9
+ MODIFY	9
+00000000000000000000000000001001
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:0 0 1 
+R	30
+ READ	30	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 0 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:1 1 0 
+M	0
+ MODIFY	0
+00000000000000000000000000000000
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:0 0 0 
+M	18
+ MODIFY	18
+00000000000000000000000000010010
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:0 1 0 
+W	31
+ WRITE	31
+00000000000000000000000000011111
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:1 1 1 
+R	6
+ READ	6	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:1 1 0 
+F
+FLUSH
+R	30
+ READ	30	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 0 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:1 1 0 
+R	13
+ READ	13	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 1 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:1 0 1 
+M	3
+ MODIFY	3
+00000000000000000000000000000011
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:0 1 1 
+W	8
+ WRITE	8
+00000000000000000000000000001000
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:0 0 0 
+R	30
+ READ	30	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 0 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:1 1 0 
+W	29
+ WRITE	29
+00000000000000000000000000011101
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:1 0 1 
+F
+FLUSH
+M	3
+ MODIFY	3
+00000000000000000000000000000011
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:0 1 1 
+F
+FLUSH
+R	7
+ READ	7	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:1 1 1 
+W	15
+ WRITE	15
+00000000000000000000000000001111
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:1 1 1 
+W	5
+ WRITE	5
+00000000000000000000000000000101
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:1 0 1 
+R	27
+ READ	27	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 1 1 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:0 1 1 
+W	1
+ WRITE	1
+00000000000000000000000000000001
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:0 0 1 
+R	5
+ READ	5	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:1 0 1 
+F
+FLUSH
+W	14
+ WRITE	14
+00000000000000000000000000001110
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:1 1 0 
+M	22
+ MODIFY	22
+00000000000000000000000000010110
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:1 1 0 
+W	28
+ WRITE	28
+00000000000000000000000000011100
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:1 0 0 
+F
+FLUSH
+W	13
+ WRITE	13
+00000000000000000000000000001101
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:1 0 1 
+M	30
+ MODIFY	30
+00000000000000000000000000011110
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:1 1 0 
+M	11
+ MODIFY	11
+00000000000000000000000000001011
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:0 1 1 
+R	31
+ READ	31	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:1 1 1 
+W	16
+ WRITE	16
+00000000000000000000000000010000
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:0 0 0 
+F
+FLUSH
+R	6
+ READ	6	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:1 1 0 
+W	30
+ WRITE	30
+00000000000000000000000000011110
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:1 1 0 
+F
+FLUSH
+W	19
+ WRITE	19
+00000000000000000000000000010011
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:0 1 1 
+R	16
+ READ	16	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:0 0 0 
+M	2
+ MODIFY	2
+00000000000000000000000000000010
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:0 1 0 
+M	27
+ MODIFY	27
+00000000000000000000000000011011
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:0 1 1 
+M	6
+ MODIFY	6
+00000000000000000000000000000110
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:1 1 0 
+R	11
+ READ	11	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 1 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:0 1 1 
+W	26
+ WRITE	26
+00000000000000000000000000011010
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:0 1 0 
+W	31
+ WRITE	31
+00000000000000000000000000011111
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:1 1 1 
+W	16
+ WRITE	16
+00000000000000000000000000010000
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:0 0 0 
+F
+FLUSH
+W	6
+ WRITE	6
+00000000000000000000000000000110
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:1 1 0 
+M	21
+ MODIFY	21
+00000000000000000000000000010101
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:1 0 1 
+M	27
+ MODIFY	27
+00000000000000000000000000011011
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:0 1 1 
+W	19
+ WRITE	19
+00000000000000000000000000010011
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:0 1 1 
+F
+FLUSH
+M	28
+ MODIFY	28
+00000000000000000000000000011100
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:1 0 0 
+R	10
+ READ	10	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 0 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:0 1 0 
+M	29
+ MODIFY	29
+00000000000000000000000000011101
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:1 0 1 
+F
+FLUSH
+R	10
+ READ	10	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 0 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:0 1 0 
+R	27
+ READ	27	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 1 1 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:0 1 1 
+R	24
+ READ	24	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 0 0 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:0 0 0 
+F
+FLUSH
+W	22
+ WRITE	22
+00000000000000000000000000010110
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:1 1 0 
+M	27
+ MODIFY	27
+00000000000000000000000000011011
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:0 1 1 
+W	25
+ WRITE	25
+00000000000000000000000000011001
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:0 0 1 
+R	19
+ READ	19	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 1 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:0 1 1 
+R	16
+ READ	16	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:0 0 0 
+W	26
+ WRITE	26
+00000000000000000000000000011010
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:0 1 0 
+W	6
+ WRITE	6
+00000000000000000000000000000110
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:1 1 0 
+M	19
+ MODIFY	19
+00000000000000000000000000010011
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:0 1 1 
+F
+FLUSH
+F
+FLUSH
+F
+FLUSH
+R	16
+ READ	16	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:0 0 0 
+M	12
+ MODIFY	12
+00000000000000000000000000001100
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:1 0 0 
+W	3
+ WRITE	3
+00000000000000000000000000000011
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:0 1 1 
+W	19
+ WRITE	19
+00000000000000000000000000010011
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:0 1 1 
+M	5
+ MODIFY	5
+00000000000000000000000000000101
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:1 0 1 
+W	17
+ WRITE	17
+00000000000000000000000000010001
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:0 0 1 
+M	10
+ MODIFY	10
+00000000000000000000000000001010
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:0 1 0 
+R	15
+ READ	15	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:1 1 1 
+R	16
+ READ	16	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:0 0 0 
+M	7
+ MODIFY	7
+00000000000000000000000000000111
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:1 1 1 
+F
+FLUSH
+W	29
+ WRITE	29
+00000000000000000000000000011101
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:1 0 1 
+W	13
+ WRITE	13
+00000000000000000000000000001101
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:1 0 1 
+W	25
+ WRITE	25
+00000000000000000000000000011001
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:0 0 1 
+F
+FLUSH
+R	2
+ READ	2	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:0 1 0 
+W	28
+ WRITE	28
+00000000000000000000000000011100
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:1 0 0 
+R	24
+ READ	24	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 0 0 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:0 0 0 
+R	12
+ READ	12	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 0 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:1 0 0 
+F
+FLUSH
+W	3
+ WRITE	3
+00000000000000000000000000000011
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:0 1 1 
+W	24
+ WRITE	24
+00000000000000000000000000011000
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:0 0 0 
+M	7
+ MODIFY	7
+00000000000000000000000000000111
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:1 1 1 
+R	12
+ READ	12	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 0 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:1 0 0 
+W	26
+ WRITE	26
+00000000000000000000000000011010
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:0 1 0 
+R	14
+ READ	14	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 0 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:1 1 0 
+R	25
+ READ	25	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 0 1 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:0 0 1 
+F
+FLUSH
+R	17
+ READ	17	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:0 0 1 
+W	30
+ WRITE	30
+00000000000000000000000000011110
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:1 1 0 
+R	0
+ READ	0	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:0 0 0 
+R	8
+ READ	8	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:0 0 0 
+R	9
+ READ	9	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:0 0 1 
+F
+FLUSH
+R	5
+ READ	5	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:1 0 1 
+R	31
+ READ	31	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:1 1 1 
+W	24
+ WRITE	24
+00000000000000000000000000011000
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:0 0 0 
+F
+FLUSH
+R	2
+ READ	2	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:0 1 0 
+W	6
+ WRITE	6
+00000000000000000000000000000110
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:1 1 0 
+M	12
+ MODIFY	12
+00000000000000000000000000001100
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:1 0 0 
+R	1
+ READ	1	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:0 0 1 
+W	19
+ WRITE	19
+00000000000000000000000000010011
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:0 1 1 
+F
+FLUSH
+F
+FLUSH
+F
+FLUSH
+F
+FLUSH
+F
+FLUSH
+W	3
+ WRITE	3
+00000000000000000000000000000011
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:0 1 1 
+M	15
+ MODIFY	15
+00000000000000000000000000001111
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:1 1 1 
+M	10
+ MODIFY	10
+00000000000000000000000000001010
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:0 1 0 
+F
+FLUSH
+R	15
+ READ	15	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:1 1 1 
+F
+FLUSH
+R	21
+ READ	21	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 0 1 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:1 0 1 
+M	26
+ MODIFY	26
+00000000000000000000000000011010
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:0 1 0 
+M	5
+ MODIFY	5
+00000000000000000000000000000101
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:1 0 1 
+F
+FLUSH
+M	22
+ MODIFY	22
+00000000000000000000000000010110
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:1 1 0 
+F
+FLUSH
+R	1
+ READ	1	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:0 0 1 
+M	5
+ MODIFY	5
+00000000000000000000000000000101
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:1 0 1 
+M	20
+ MODIFY	20
+00000000000000000000000000010100
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:1 0 0 
+R	0
+ READ	0	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:0 0 0 
+R	18
+ READ	18	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 0 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:0 1 0 
+W	9
+ WRITE	9
+00000000000000000000000000001001
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:0 0 1 
+W	13
+ WRITE	13
+00000000000000000000000000001101
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:1 0 1 
+R	15
+ READ	15	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:1 1 1 
+F
+FLUSH
+M	6
+ MODIFY	6
+00000000000000000000000000000110
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:1 1 0 
+F
+FLUSH
+R	8
+ READ	8	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:0 0 0 
+M	24
+ MODIFY	24
+00000000000000000000000000011000
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:0 0 0 
+F
+FLUSH
+W	1
+ WRITE	1
+00000000000000000000000000000001
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:0 0 1 
+W	1
+ WRITE	1
+00000000000000000000000000000001
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:0 0 1 
+F
+FLUSH
+W	18
+ WRITE	18
+00000000000000000000000000010010
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:0 1 0 
+M	25
+ MODIFY	25
+00000000000000000000000000011001
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:0 0 1 
+W	16
+ WRITE	16
+00000000000000000000000000010000
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:0 0 0 
+F
+FLUSH
+R	23
+ READ	23	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 1 1 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:1 1 1 
+W	24
+ WRITE	24
+00000000000000000000000000011000
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:0 0 0 
+R	18
+ READ	18	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 0 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:0 1 0 
+R	29
+ READ	29	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 0 1 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:1 0 1 
+M	9
+ MODIFY	9
+00000000000000000000000000001001
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:0 0 1 
+R	18
+ READ	18	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 0 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:0 1 0 
+F
+FLUSH
+W	28
+ WRITE	28
+00000000000000000000000000011100
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:1 0 0 
+M	15
+ MODIFY	15
+00000000000000000000000000001111
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:1 1 1 
+F
+FLUSH
+W	21
+ WRITE	21
+00000000000000000000000000010101
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:1 0 1 
+W	21
+ WRITE	21
+00000000000000000000000000010101
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:1 0 1 
+F
+FLUSH
+R	31
+ READ	31	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:1 1 1 
+W	12
+ WRITE	12
+00000000000000000000000000001100
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:1 0 0 
+R	13
+ READ	13	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 1 
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 0 
+block offset bits are:1 0 1 
+W	25
+ WRITE	25
+00000000000000000000000000011001
+tag bits are:0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+index bits are:0 1 
+block offset bits are:0 0 1 
+F
+FLUSH
+F
+FLUSH
