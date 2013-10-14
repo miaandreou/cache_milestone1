@@ -214,6 +214,7 @@ int main(){
 			  fgets(buf,MAX_CHARS_PER_LINE,dedomena);
 				command = strtok_s(buf, DELIMITER, &a);
 				
+				//an einai read
 				if (command[0]==READ[0]){
 					address=strtok_s(0, DELIMITER, &a);
 					address_atoi=atoi(address);
@@ -237,6 +238,7 @@ int main(){
 					fprintf(out, "\n");
 				}
 
+				//an einai write
 				else if (command[0]==WRITE[0]){
 					address=strtok_s(0, DELIMITER, &a);
 					address_atoi=atoi(address);
@@ -260,6 +262,7 @@ int main(){
 					fprintf(out, "\n");
 				}
 
+				//an einai modify
 				else if (command[0]==MODIFY[0]){
 					address=strtok_s(0, DELIMITER, &a);
 					address_atoi=atoi(address);
@@ -283,10 +286,10 @@ int main(){
 					fprintf(out, "\n");
 				}
 
+				//an einai flush
 				else if (command[0]==FLUSH[0]){
 					fprintf(out, "%sFLUSH\n", command );	
 				}
-
 				
 				}
 
