@@ -1,0 +1,15 @@
+megethos_ram	128
+megethos_cache	64
+megethos_leksis	8
+sinolika_flushes	2
+pollaplasiastis_sinolikwn_entolwn	1
+arxitekt_1_direct_map_2_n-ass_3_full_ass	1
+leksis_ana_block	1
+se_periptwsi_n-associative_ways	2
+kikloi_hit	2
+kikloi_miss	5
+pol_antikat_1_for_FIFO_2_LRU_3_RANDOM	1
+poL_eggrafis_1_for_write_back_2_write_through	1
+pol_apot_eggrafis_1_for_alloc_2_non_alloC	1
+1_ipar3i_victim_cache_2_mi_ipar3i:	2
+megethos_victim:	8
