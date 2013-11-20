@@ -1,14 +1,20 @@
 // christodoulos christodoulou michalis andreou project of cache milestone 1
+#define _CRT_SECURE_NO_WARNINGS
 #include "voi8itikes_sinartisis.h"
+#include <string.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <conio.h>
+#include <time.h>
  
 
 
-
 typedef struct cache {
-  char *index;	
-  char *tag;
-  char *block_offset;
+	
+
+//  char *block_offset;
   int valid;
+  int ctag;
 } newcache;
 
 
@@ -25,7 +31,7 @@ int main(){
 	int bits_block_offset;
 	
 	
-	int i,j;
+	int i,j,q,p, k,m;
 	int diey8insi;
 	int r_entoli;
 	int address_atoi;
@@ -81,12 +87,17 @@ int main(){
     int cacheHit = 0;
     int read = 0;
     int write = 0;
+	int modify=0;
 	char bbits[64]; //block offset bits
     char sbits[64]; //index bits
-    char tbits[64]; //tag bits
+    int tbits[64]; //tag bits
 	int setadd;
     int totalset=0;
+	int tagadd;
+	int totaltag=0;
+	int randomcounter =0;
 	newcache* mycache;
+	
 
 
 	oppeningerror1= fopen_s( &parametroi, "parametroi.txt", "r+"); //anoigma arxeiou
@@ -231,24 +242,17 @@ int main(){
 			bits_block_offset=log2(megethos_block);
 		bits_index=log2(grammes);
 		bits_tag=bits_addressing-(bits_block_offset)-(bits_index);
-		printf("index %d tag%d bo %d", bits_index, bits_tag, bits_block_offset);
-		mycache= mycache=(newcache *) malloc( sizeof(newcache *)*leksis );
+		printf("index %d tag%d bo %d\n", bits_index, bits_tag, bits_block_offset);
+		 mycache=(newcache *) malloc( sizeof(newcache *)*(leksis+2 ));
 		//initial cache
 	
 			for(i=0;i<leksis;i++) {
-				//Allocating Space for Tag Bits, initiating tag and valid to 0s
-		mycache[i].tag = (char *)malloc(sizeof(char)*(bits_tag+1));
-		for(j=0;j<bits_tag;j++)
-        {
-			mycache[i].tag[j] = '0';
-        }
+		mycache[i].ctag=9999;
 		mycache[i].valid = 0;
+		randomcounter +=1;
     }
-		
-
-
-
-
+		printf("counter value: %d\n", randomcounter);
+		printf("leksis!!!!!1: %d\n", leksis);
 	}
 
 	//ipologismoi pediwn addressing gia n way associative
@@ -350,17 +354,27 @@ int main(){
 
 
 		 while (!feof(dedomena)){
+			 setadd = 0;
+			 totalset = 0;
+			 tagadd = 0;
+			 totaltag = 0;
 			  fgets(buf1,MAX_CHARS_PER_LINE,dedomena);
 				command = strtok_s(buf1, DELIMITER, &a);
 				
 				//an einai read
-				if (command[0]=='R'){
+				if ((command[0]=='R')|| (command[0]=='W')||(command[0]=='M')){
 					address=strtok_s(0, DELIMITER, &a);
+					
+					
+					/*
 					size=strlen(address);
 					for(i=size; i>=0;i--){
-						help[i]=address[i];}
-					address_atoi=atoi(help);
-					initialhelp(help);
+						help[i]=address[i];}*/
+
+					address_atoi=atoi(address);
+
+					//initialhelp(help);
+
 					dec2bin(binary, address_atoi);
 					fprintf(out, "%s\t%s READ\t%d\t", command, address,address_atoi );
 					for(j=bits_addressing-1;j>=0;j--) {
@@ -374,41 +388,87 @@ int main(){
 					fprintf(out, "\nindex bits are:");
 					for(j=bits_addressing-1-bits_tag,i=0;j>bits_addressing-1-bits_tag-bits_index;j--,i++) {
 						  fprintf(out, "%d ",binary[j]);
-						  sbits[i]=binary[j];
+						  sbits[i]=binary[j]+48;
+						  
 					   }
 					fprintf(out, "\nblock offset bits are:");
 					for(j=bits_addressing-1-bits_tag-bits_index,i=0;j>=0;j--,i++) {
 						  fprintf(out, "%d ",binary[j]);
-						  bbits[i]=binary[j];
+						  bbits[i]=binary[j]+48;
+						  
 					   }
 					fprintf(out, "\n");
+				
 
 					//Convert set bits from char array into ints
-					for(i = 0, j = (bits_index -1); i < bits_index; i ++, j--) {
-						if (sbits[i] == '1')
+					for(q = 0, p = (bits_index -1); q < bits_index; q ++, p--) {
+						if (sbits[q] == '1')
 							 setadd = 1;
-					    if (sbits[i] == '0')
+					    if (sbits[q] == '0')
 							 setadd = 0;
-					    setadd = setadd * pow(2, j);
+					    setadd = setadd * pow(2, p);
 					    totalset += setadd;
 				  }
-			    	//Calculating Hits and Misses
-						 if ((mycache[totalset].valid == 1) && (strcmp(mycache[totalset].tag, tbits) == 0))
-						  {  /* Hit */
+					printf("totalset %d\n", totalset);
+
+
+					///////////CONVERT TAG BITS//////////////////////////////////////////
+
+					
+					for(k = 0, m = (bits_tag-1); k < bits_tag; k ++, m--) {
+						if (tbits[k] == 1)
+							 tagadd = 1;
+					    if (tbits[k] == 0)
+							 tagadd = 0;
+					    tagadd = tagadd * pow(2, m);
+					    totaltag += tagadd;
+				  }
+					
+					printf("totaltag %d\n", totaltag);
+
+
+
+
+
+
+					if ((command[0]=='R')||(command[0]=='M')){  //Calculating Hits and Misses an einai read
+			    	
+						if ((mycache[totalset].valid == 1) && (mycache[totalset].ctag==totaltag))
+						  {  // Hit 
 						   cacheHit++;
+						   read++;
 							}
-						 else {   /* Miss (cache entry invalid, or wrong tag) */
+						 else {   // Miss (cache entry invalid, or wrong tag) 
 							  cacheMiss++;
 						      read++;
-							  mycache[totalset].valid = 1;
-							  strcpy(mycache[totalset].tag, tbits);
-                              }   
+							  //mycache[totalset].valid = 1;
+							 // strcpy(mycache[totalset].tag, tbits);
+							 } 
+					}
+
+					if (command[0]=='W'){
+						 //Calculating Hits and Misses
+					    if ((mycache[totalset].valid == 1) && (mycache[totalset].ctag==totaltag))
+						  {  // Hit 
+						  cacheHit++;
+						   write++;
+						  }
+					  else
+						 { // Miss (cache entry invalid, or wrong tag) 
+						   cacheMiss++;
+						   write++;
+						   mycache[totalset].valid = 1;
+						  mycache[totalset].ctag= totaltag;
+						 }
+					}
+
+
 				}
 
 
 
 				//an einai write
-				else if (command[0]=='W'){
+			/*	else if (command[0]=='W'){
 					address=strtok_s(0, DELIMITER, &a);
 					size=strlen(address);
 					for(i=size; i>=0;i--){
@@ -423,17 +483,17 @@ int main(){
 					fprintf(out, "\ntag bits are:");
 					for(j=bits_addressing-1,i=0;j>bits_addressing-1-bits_tag;j--,i++) {
 						  fprintf(out, "%d ",binary[j]);
-						  tbits[i]=binary[j];
+						  tbits[i]=binary[j]+48;
 					   }
 					fprintf(out, "\nindex bits are:");
 					for(j=bits_addressing-1-bits_tag,i=0;j>bits_addressing-1-bits_tag-bits_index;j--,i++) {
 						  fprintf(out, "%d ",binary[j]);
-						  sbits[i]=binary[j];
+						  sbits[i]=binary[j]+48;
 					   }
 					fprintf(out, "\nblock offset bits are:");
 					for(j=bits_addressing-1-bits_tag-bits_index,i=0;j>=0;j--,i++) {
 						  fprintf(out, "%d ",binary[j]);
-						  bbits[i]=binary[j];
+						  bbits[i]=binary[j]+48;
 					   }
 					fprintf(out, "\n");
 
@@ -446,19 +506,21 @@ int main(){
 					    setadd = setadd * pow(2, j);
 					    totalset += setadd;
 				  }
+					printf("totalset %d\n", totalset);
+						
+
 
 					  //Calculating Hits and Misses
-				     if ((mycache[totalset].valid == 1)&& (strcmp(mycache[totalset].tag, tbits) == 0))
+				    if ((mycache[totalset].valid == 1) && (strncmp(mycache[totalset].tag,tbits,bits_tag)==0))
 					  {
-					     /* Hit */ 
+					     // Hit 
 					   cacheHit++;
 			           write++;
 					  }
 				    else
 					 {
-				    /* Miss (cache entry invalid, or wrong tag) */
+				    // Miss (cache entry invalid, or wrong tag) 
 				       cacheMiss++;
-				       read++;
 				       write++;
 					   mycache[totalset].valid = 1;
 					  strcpy(mycache[totalset].tag, tbits);
@@ -483,47 +545,49 @@ int main(){
 					fprintf(out, "\ntag bits are:");
 					for(j=bits_addressing-1,i=0;j>bits_addressing-1-bits_tag;j--,i++) {
 						  fprintf(out, "%d ",binary[j]);
-						  tbits[i]=binary[j];
+						  tbits[i]=binary[j]+48;
 					   }
 					fprintf(out, "\nindex bits are:");
 					for(j=bits_addressing-1-bits_tag,i=0;j>bits_addressing-1-bits_tag-bits_index;j--,i++) {
 						  fprintf(out, "%d ",binary[j]);
-						  sbits[i]=binary[j];
+						  sbits[i]=binary[j]+48;
 					   }
 					fprintf(out, "\nblock offset bits are:");
 					for(j=bits_addressing-1-bits_tag-bits_index,i=0;j>=0;j--,i++) {
 						  fprintf(out, "%d ",binary[j]);
-						  bbits[i]=binary[j];
+						  bbits[i]=binary[j]+48;
 					   }
 					fprintf(out, "\n");
 
 
 					//Convert set bits from char array into ints
-					for(i = 0, j = (bits_index -1); i < bits_index; i ++, j--) {
-						if (sbits[i] == '1')
+					for(k = 0, m = (bits_index -1); k < bits_index; k ++, m--) {
+						if (sbits[k] == '1')
 							 setadd = 1;
-					    if (sbits[i] == '0')
+					    if (sbits[k] == '0')
 							 setadd = 0;
-					    setadd = setadd * pow(2, j);
+					    setadd = setadd * pow(2, m);
 					    totalset += setadd;
 				  }
+					printf("totalset %d\n", totalset);
 
 				//ypologismos Hits and Misses
-						 if ((mycache[totalset].valid == 1) && (strcmp(mycache[totalset].tag, tbits) == 0))
-						  {  /* Hit */
+						if ((mycache[totalset].valid == 1) && (strncmp(mycache[totalset].tag,tbits,bits_tag)==0))
+						  {  //Hit 
 						   cacheHit++;
+							modify++;
 							}
-						 else {   /* Miss (cache entry invalid, or wrong tag) */
+						 else {   // Miss (cache entry invalid, or wrong tag) 
 							  cacheMiss++;
-						      read++;
-							  mycache[totalset].valid = 1;
-							  strcpy(mycache[totalset].tag, tbits);
+						      modify++;
+							 // mycache[totalset].valid = 1;
+							//  strcpy(mycache[totalset].tag, tbits);
                               } 
 				}
 
 
 
-
+				*/
 
 				//an einai flush
 				else if (command[0]=='F')
@@ -540,6 +604,13 @@ int main(){
 	     printf("Misses: %d\n", cacheMiss);
 		 printf("Writes: %d\n", write);
 		 printf("Reads: %d\n", read);
+		 printf("Modifys %d\n", modify);
+		 /*for(i=0;i<leksis;i++) {
+				//free Space for Tag Bits,
+			 free(mycache[i].tag);}*/
+//		 free(mycache);
+		
+			 
 		 
 	    system("Pause");
 

@@ -1,9 +1,4 @@
-#define _CRT_SECURE_NO_WARNINGS
-#include <string.h>
-#include <stdlib.h>
-#include <stdio.h>
-#include <conio.h>
-#include <time.h>
+
 
 
 //sinartisi gia logarithmo 2
@@ -19,12 +14,14 @@ int pow(int a, int b);
 int pow(int a, int b){
 	int i;
 	int y;
+	int x;
+	x=b-1;
 	if (b==0){
 		y=1;}
 	else{
 		y=a;
 	
-	for (i=0; i<b; i++){
+	for (i=0; i<x; i++){
 		y=y*a;}}
 	return y;}
 
