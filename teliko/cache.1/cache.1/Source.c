@@ -11,10 +11,8 @@
 
 typedef struct cache {
 	
-
-//  char *block_offset;
-  int valid;
-  int ctag;
+  int valid[8];
+  int ctag[8]; // estw maximum blocks 8
 } newcache;
 
 
@@ -95,7 +93,19 @@ int main(){
     int totalset=0;
 	int tagadd;
 	int totaltag=0;
+	int bladd;
+	int totalbl=0;
 	int randomcounter =0;
+	int randomcounter1 =0;
+	int compulsory=0;
+	int conflict=0;
+	int capacity=0;
+	int dways=1;
+	int totalkikloi;
+	float missrate;
+	float hitrate;
+
+
 	newcache* mycache;
 	
 
@@ -243,17 +253,26 @@ int main(){
 		bits_index=log2(grammes);
 		bits_tag=bits_addressing-(bits_block_offset)-(bits_index);
 		printf("index %d tag%d bo %d\n", bits_index, bits_tag, bits_block_offset);
-		 mycache=(newcache *) malloc( sizeof(newcache *)*(leksis+2 ));
+
+		//allocate cacheeee/////
+		 mycache=(newcache *) malloc( sizeof(newcache *)*(leksis*20));
+
 		//initial cache
-	
 			for(i=0;i<leksis;i++) {
-		mycache[i].ctag=9999;
-		mycache[i].valid = 0;
-		randomcounter +=1;
+				for (j=0;j<megethos_block;j++){
+					randomcounter +=1;
+					printf("counter value: %d\n", randomcounter);
+					mycache[i].ctag[j]=-1;
+
+				mycache[i].valid[j] = 0;
+				randomcounter1 +=1;
+				printf("counter value11111 is: %d\n", randomcounter1);}
+		
     }
-		printf("counter value: %d\n", randomcounter);
+		
 		printf("leksis!!!!!1: %d\n", leksis);
 	}
+
 
 	//ipologismoi pediwn addressing gia n way associative
 	else if (eidos==2){
@@ -265,8 +284,6 @@ int main(){
 			return 0;}
 		else{
 		bits_index=log2(grammes);
-		//if (megethos_block==1){bits_block_offset=1;}
-		//else{
 			bits_block_offset=log2(megethos_block);//}
 		bits_tag=bits_addressing-(bits_block_offset)-(bits_index);
 		printf("index %d tag%d bo %d", bits_index, bits_tag, bits_block_offset);}
@@ -274,13 +291,30 @@ int main(){
 
 	//ipologismoi pediwn addressing gia full associative
 	else if (eidos==3){
-		megethos_block=leksis;
-		//if (megethos_block==1){bits_block_offset=1;}
-		//else{
+		dways=leksis/megethos_block;
 			bits_block_offset=log2(megethos_block);//}
 		bits_index=0;
 		bits_tag=bits_addressing-(bits_block_offset)-(bits_index);
-		printf("index %d tag%d bo %d", bits_index, bits_tag, bits_block_offset);}
+		printf("index %d tag%d bo %d", bits_index, bits_tag, bits_block_offset);
+		//allocate cacheeee/////
+		for(i=0;i<dways;i++){
+		 mycache=(newcache *) malloc( sizeof(newcache *)*(leksis*20));
+
+		//initial cache
+			for(i=0;i<leksis;i++) {
+				for (j=0;j<megethos_block;j++){
+					mycache[i].ctag[j]=-1;
+				mycache[i].valid[j] = 0;
+				}
+			}
+    }
+		
+		printf("leksis!!!!!1: %d\n", leksis);
+
+
+	
+	
+	}
 	//LATHOS EPILOGI
 	else {
 		printf("ERROR INPUT TRY AGAIN");
@@ -358,23 +392,15 @@ int main(){
 			 totalset = 0;
 			 tagadd = 0;
 			 totaltag = 0;
+			 bladd = 0;
+			 totalbl = 0;
 			  fgets(buf1,MAX_CHARS_PER_LINE,dedomena);
 				command = strtok_s(buf1, DELIMITER, &a);
 				
 				//an einai read
 				if ((command[0]=='R')|| (command[0]=='W')||(command[0]=='M')){
 					address=strtok_s(0, DELIMITER, &a);
-					
-					
-					/*
-					size=strlen(address);
-					for(i=size; i>=0;i--){
-						help[i]=address[i];}*/
-
 					address_atoi=atoi(address);
-
-					//initialhelp(help);
-
 					dec2bin(binary, address_atoi);
 					fprintf(out, "%s\t%s READ\t%d\t", command, address,address_atoi );
 					for(j=bits_addressing-1;j>=0;j--) {
@@ -399,7 +425,6 @@ int main(){
 					   }
 					fprintf(out, "\n");
 				
-
 					//Convert set bits from char array into ints
 					for(q = 0, p = (bits_index -1); q < bits_index; q ++, p--) {
 						if (sbits[q] == '1')
@@ -411,10 +436,7 @@ int main(){
 				  }
 					printf("totalset %d\n", totalset);
 
-
-					///////////CONVERT TAG BITS//////////////////////////////////////////
-
-					
+					//CONVERT TAG BITS
 					for(k = 0, m = (bits_tag-1); k < bits_tag; k ++, m--) {
 						if (tbits[k] == 1)
 							 tagadd = 1;
@@ -426,6 +448,18 @@ int main(){
 					
 					printf("totaltag %d\n", totaltag);
 
+					//convert block offset bits
+					for(k = 0, m = (bits_block_offset-1); k < bits_block_offset; k ++, m--) {
+						if (bbits[k] == '1')
+							 bladd = 1;
+					    if (bbits[k] == '0')
+							 bladd = 0;
+					    bladd = bladd * pow(2, m);
+					    totalbl += bladd;
+				  }
+					
+					printf("totalblockoffset %d\n", totalbl);
+
 
 
 
@@ -433,22 +467,29 @@ int main(){
 
 					if ((command[0]=='R')||(command[0]=='M')){  //Calculating Hits and Misses an einai read
 			    	
-						if ((mycache[totalset].valid == 1) && (mycache[totalset].ctag==totaltag))
+						if ((mycache[totalset].valid[totalbl] == 1) && (mycache[totalset].ctag[totalbl]==totaltag))
 						  {  // Hit 
 						   cacheHit++;
 						   read++;
 							}
 						 else {   // Miss (cache entry invalid, or wrong tag) 
+							 if (mycache[totalset].valid[totalbl] == 0){
+								 compulsory=compulsory+1;
+								 fprintf(out, "miss! type: compulsory\n");
+							 }
+							 if ((mycache[totalset].valid[totalbl] == 1) && (mycache[totalset].ctag[totalbl]!=totaltag)){
+								  conflict=conflict+1;
+								 fprintf(out, "miss! type: conflict\n");
+							 }
+
 							  cacheMiss++;
 						      read++;
-							  //mycache[totalset].valid = 1;
-							 // strcpy(mycache[totalset].tag, tbits);
 							 } 
 					}
 
 					if (command[0]=='W'){
 						 //Calculating Hits and Misses
-					    if ((mycache[totalset].valid == 1) && (mycache[totalset].ctag==totaltag))
+						if ((mycache[totalset].valid[totalbl] == 1) && (mycache[totalset].ctag[totalbl]==totaltag))
 						  {  // Hit 
 						  cacheHit++;
 						   write++;
@@ -457,8 +498,8 @@ int main(){
 						 { // Miss (cache entry invalid, or wrong tag) 
 						   cacheMiss++;
 						   write++;
-						   mycache[totalset].valid = 1;
-						  mycache[totalset].ctag= totaltag;
+						   mycache[totalset].valid[totalbl] = 1;
+						   mycache[totalset].ctag[totalbl]=totaltag;
 						 }
 					}
 
@@ -467,131 +508,21 @@ int main(){
 
 
 
-				//an einai write
-			/*	else if (command[0]=='W'){
-					address=strtok_s(0, DELIMITER, &a);
-					size=strlen(address);
-					for(i=size; i>=0;i--){
-						help[i]=address[i];}
-					address_atoi=atoi(help);
-					initialhelp(help);
-					dec2bin(binary, address_atoi);
-					fprintf(out, "%s\t%s WRITE\t%d\n", command, address, address_atoi );
-					for(j=bits_addressing-1;j>=0;j--) {
-						  fprintf(out, "%d",binary[j]);
-					   }
-					fprintf(out, "\ntag bits are:");
-					for(j=bits_addressing-1,i=0;j>bits_addressing-1-bits_tag;j--,i++) {
-						  fprintf(out, "%d ",binary[j]);
-						  tbits[i]=binary[j]+48;
-					   }
-					fprintf(out, "\nindex bits are:");
-					for(j=bits_addressing-1-bits_tag,i=0;j>bits_addressing-1-bits_tag-bits_index;j--,i++) {
-						  fprintf(out, "%d ",binary[j]);
-						  sbits[i]=binary[j]+48;
-					   }
-					fprintf(out, "\nblock offset bits are:");
-					for(j=bits_addressing-1-bits_tag-bits_index,i=0;j>=0;j--,i++) {
-						  fprintf(out, "%d ",binary[j]);
-						  bbits[i]=binary[j]+48;
-					   }
-					fprintf(out, "\n");
-
-					//Convert set bits from char array into ints
-					for(i = 0, j = (bits_index -1); i < bits_index; i ++, j--) {
-						if (sbits[i] == '1')
-							 setadd = 1;
-					    if (sbits[i] == '0')
-							 setadd = 0;
-					    setadd = setadd * pow(2, j);
-					    totalset += setadd;
-				  }
-					printf("totalset %d\n", totalset);
-						
-
-
-					  //Calculating Hits and Misses
-				    if ((mycache[totalset].valid == 1) && (strncmp(mycache[totalset].tag,tbits,bits_tag)==0))
-					  {
-					     // Hit 
-					   cacheHit++;
-			           write++;
-					  }
-				    else
-					 {
-				    // Miss (cache entry invalid, or wrong tag) 
-				       cacheMiss++;
-				       write++;
-					   mycache[totalset].valid = 1;
-					  strcpy(mycache[totalset].tag, tbits);
-						 }
-
-
-				}
-
-				//an einai modify
-				else if (command[0]=='M'){
-					address=strtok_s(0, DELIMITER, &a);
-					size=strlen(address);
-					for(i=size; i>=0;i--){
-						help[i]=address[i];}
-					address_atoi=atoi(help);
-					initialhelp(help);
-					dec2bin(binary, address_atoi);
-					fprintf(out, "%s\t%s MODIFY\t%d\n", command, address, address_atoi );
-					for(j=bits_addressing-1;j>=0;j--) {
-						  fprintf(out, "%d",binary[j]);
-					   }
-					fprintf(out, "\ntag bits are:");
-					for(j=bits_addressing-1,i=0;j>bits_addressing-1-bits_tag;j--,i++) {
-						  fprintf(out, "%d ",binary[j]);
-						  tbits[i]=binary[j]+48;
-					   }
-					fprintf(out, "\nindex bits are:");
-					for(j=bits_addressing-1-bits_tag,i=0;j>bits_addressing-1-bits_tag-bits_index;j--,i++) {
-						  fprintf(out, "%d ",binary[j]);
-						  sbits[i]=binary[j]+48;
-					   }
-					fprintf(out, "\nblock offset bits are:");
-					for(j=bits_addressing-1-bits_tag-bits_index,i=0;j>=0;j--,i++) {
-						  fprintf(out, "%d ",binary[j]);
-						  bbits[i]=binary[j]+48;
-					   }
-					fprintf(out, "\n");
-
-
-					//Convert set bits from char array into ints
-					for(k = 0, m = (bits_index -1); k < bits_index; k ++, m--) {
-						if (sbits[k] == '1')
-							 setadd = 1;
-					    if (sbits[k] == '0')
-							 setadd = 0;
-					    setadd = setadd * pow(2, m);
-					    totalset += setadd;
-				  }
-					printf("totalset %d\n", totalset);
-
-				//ypologismos Hits and Misses
-						if ((mycache[totalset].valid == 1) && (strncmp(mycache[totalset].tag,tbits,bits_tag)==0))
-						  {  //Hit 
-						   cacheHit++;
-							modify++;
-							}
-						 else {   // Miss (cache entry invalid, or wrong tag) 
-							  cacheMiss++;
-						      modify++;
-							 // mycache[totalset].valid = 1;
-							//  strcpy(mycache[totalset].tag, tbits);
-                              } 
-				}
-
-
-
-				*/
+				
 
 				//an einai flush
 				else if (command[0]=='F')
 				{
+					//initial cache
+	
+					for(i=0;i<leksis;i++) {
+					for (j=0;j<megethos_block;j++){
+					mycache[i].ctag[j]=-1;
+					mycache[i].valid[j] = 0;
+					}
+		
+    }
+
 					fprintf(out, "%sFLUSH\n", command );	
 				}
 				
@@ -600,15 +531,22 @@ int main(){
 				
 		 fclose(dedomena); //klisimo arxeiou
 		 fclose(out);
+		 totalkikloi=(cacheMiss*kikloi_miss)+(cacheMiss*kikloi_hit);
+		 missrate=((float)cacheMiss/(read+write))*100;
+		 hitrate=((float)cacheHit/(read+write))*100;
 		 printf("Hits: %d\n", cacheHit);
 	     printf("Misses: %d\n", cacheMiss);
 		 printf("Writes: %d\n", write);
 		 printf("Reads: %d\n", read);
 		 printf("Modifys %d\n", modify);
-		 /*for(i=0;i<leksis;i++) {
-				//free Space for Tag Bits,
-			 free(mycache[i].tag);}*/
-//		 free(mycache);
+		 printf("misses compulsory %d\n", compulsory);
+		 printf("misses conflict %d\n", conflict);
+		 printf("misses capacity %d\n", capacity);
+		 printf("sinolikoi kikloi %d\n", totalkikloi);
+		 printf("missrate: %.2f tis ekato\n", missrate);
+		 printf("hitrate: %.2f tis ekato\n", hitrate);
+
+		 free(mycache);
 		
 			 
 		 

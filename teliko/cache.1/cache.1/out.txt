@@ -1,76 +1,85 @@
-R	8
- READ	8	1 0 0 0 
+M	10
+ READ	10	1 0 1 0 
 tag bits are:1 
-index bits are:0 0 0 
-block offset bits are:
+index bits are:0 
+block offset bits are:1 0 
+miss! type: compulsory
+R	3
+ READ	3	0 0 1 1 
+tag bits are:0 
+index bits are:0 
+block offset bits are:1 1 
+miss! type: compulsory
+M	3
+ READ	3	0 0 1 1 
+tag bits are:0 
+index bits are:0 
+block offset bits are:1 1 
+miss! type: compulsory
+M	0
+ READ	0	0 0 0 0 
+tag bits are:0 
+index bits are:0 
+block offset bits are:0 0 
+miss! type: compulsory
+W	10
+ READ	10	1 0 1 0 
+tag bits are:1 
+index bits are:0 
+block offset bits are:1 0 
+W	0
+ READ	0	0 0 0 0 
+tag bits are:0 
+index bits are:0 
+block offset bits are:0 0 
+R	5
+ READ	5	0 1 0 1 
+tag bits are:0 
+index bits are:1 
+block offset bits are:0 1 
+miss! type: compulsory
+W	7
+ READ	7	0 1 1 1 
+tag bits are:0 
+index bits are:1 
+block offset bits are:1 1 
 M	2
  READ	2	0 0 1 0 
 tag bits are:0 
-index bits are:0 1 0 
-block offset bits are:
-R	14
- READ	14	1 1 1 0 
+index bits are:0 
+block offset bits are:1 0 
+miss! type: conflict
+W	11
+ READ	11	1 0 1 1 
 tag bits are:1 
-index bits are:1 1 0 
-block offset bits are:
-M	14
- READ	14	1 1 1 0 
-tag bits are:1 
-index bits are:1 1 0 
-block offset bits are:
-M	3
- READ	3	0 0 1 1 
-tag bits are:0 
-index bits are:0 1 1 
-block offset bits are:
-R	9
- READ	9	1 0 0 1 
-tag bits are:1 
-index bits are:0 0 1 
-block offset bits are:
-R	9
- READ	9	1 0 0 1 
-tag bits are:1 
-index bits are:0 0 1 
-block offset bits are:
-R	14
- READ	14	1 1 1 0 
-tag bits are:1 
-index bits are:1 1 0 
-block offset bits are:
-M	1
- READ	1	0 0 0 1 
-tag bits are:0 
-index bits are:0 0 1 
-block offset bits are:
-M	3
- READ	3	0 0 1 1 
-tag bits are:0 
-index bits are:0 1 1 
-block offset bits are:
-M	14
- READ	14	1 1 1 0 
-tag bits are:1 
-index bits are:1 1 0 
-block offset bits are:
-F
-FLUSH
-W	13
- READ	13	1 1 0 1 
-tag bits are:1 
-index bits are:1 0 1 
-block offset bits are:
+index bits are:0 
+block offset bits are:1 1 
 W	8
  READ	8	1 0 0 0 
 tag bits are:1 
-index bits are:0 0 0 
-block offset bits are:
-W	6
- READ	6	0 1 1 0 
-tag bits are:0 
-index bits are:1 1 0 
-block offset bits are:
-R	8 READ	8	1 0 0 0 
+index bits are:0 
+block offset bits are:0 0 
+R	8
+ READ	8	1 0 0 0 
 tag bits are:1 
-index bits are:0 0 0 
-block offset bits are:
+index bits are:0 
+block offset bits are:0 0 
+R	0
+ READ	0	0 0 0 0 
+tag bits are:0 
+index bits are:0 
+block offset bits are:0 0 
+miss! type: conflict
+F
+FLUSH
+M	3
+ READ	3	0 0 1 1 
+tag bits are:0 
+index bits are:0 
+block offset bits are:1 1 
+miss! type: compulsory
+R	13 READ	13	1 1 0 1 
+tag bits are:1 
+index bits are:1 
+block offset bits are:0 1 
+miss! type: compulsory

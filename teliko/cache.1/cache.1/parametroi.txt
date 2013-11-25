@@ -4,7 +4,7 @@ megethos_leksis	8
 sinolika_flushes	2
 pollaplasiastis_sinolikwn_entolwn	1
 arxitekt_1_direct_map_2_n-ass_3_full_ass	1
-leksis_ana_block	1
+leksis_ana_block	4
 se_periptwsi_n-associative_ways	2
 kikloi_hit	2
 kikloi_miss	5
