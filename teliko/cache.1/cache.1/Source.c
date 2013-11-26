@@ -9,13 +9,30 @@
  
 
 
+
 typedef struct cache {
-	
-  int valid[8];
-  int ctag[8]; // estw maximum blocks 8
+	int dirty[16];
+  int valid[16];
+  int ctag[16]; // estw maximum blocks size 16 leksis
 } newcache;
 
 
+typedef struct nwayAndfully {
+  int dirty[16];
+  int valid[16];// estw maximum blocks size 16 leksis
+  int ctag[16]; 
+  int FifoAndLru[16];
+} newnwayAndfully;
+
+/*typedef struct ways {
+	
+	nwayAndfully  way;
+} newnways;*/
+
+typedef struct victim {
+  int ctag; 
+  int FIFO;
+} newvictim;
 
 
 int main(){
@@ -104,9 +121,19 @@ int main(){
 	int totalkikloi;
 	float missrate;
 	float hitrate;
-
-
+	int helpcounter_fifo_and_lru=0;
+//	int fully;//help deiktis gia fully associative
+	int ifhit;
+	int write_flag;
+	int deiktis_ekdiwksis;
+	int flag_compulsory;
+	int flag_campacity;
+	int flag_conflict;
+	int min;
 	newcache* mycache;
+//	newnways* mycache1;
+	newnwayAndfully* mycache2;
+	newvictim* myvictim;
 	
 
 
@@ -227,6 +254,11 @@ int main(){
 	  if (victim_cache=1){printf("YPARXEI VICTIM CACHE\n KAI TO MEGETHOS THS EINAI %d\n", megethos_victim);}
 	  else {printf("DEN IPAXEI VICTIM CACHE\n");}
 	  
+	  //allocate memory for victim cache
+	  if (victim_cache=1){
+		  myvictim=(newvictim *) malloc( sizeof(newvictim *)*(megethos_victim+2));}
+
+
 
 
 	  
@@ -255,18 +287,18 @@ int main(){
 		printf("index %d tag%d bo %d\n", bits_index, bits_tag, bits_block_offset);
 
 		//allocate cacheeee/////
-		 mycache=(newcache *) malloc( sizeof(newcache *)*(leksis*20));
+		 mycache=(newcache *) malloc( sizeof(newcache *)*(leksis*1000));
 
 		//initial cache
-			for(i=0;i<leksis;i++) {
+			for(i=0;i<dways;i++) {
 				for (j=0;j<megethos_block;j++){
 					randomcounter +=1;
 					printf("counter value: %d\n", randomcounter);
 					mycache[i].ctag[j]=-1;
-
-				mycache[i].valid[j] = 0;
-				randomcounter1 +=1;
-				printf("counter value11111 is: %d\n", randomcounter1);}
+					mycache[i].valid[j] = 0;
+					mycache[i].dirty[j]=0;
+					randomcounter1 +=1;
+					printf("counter value11111 is: %d\n", randomcounter1);}
 		
     }
 		
@@ -292,21 +324,25 @@ int main(){
 	//ipologismoi pediwn addressing gia full associative
 	else if (eidos==3){
 		dways=leksis/megethos_block;
-			bits_block_offset=log2(megethos_block);//}
+		bits_block_offset=log2(megethos_block);//}
 		bits_index=0;
 		bits_tag=bits_addressing-(bits_block_offset)-(bits_index);
 		printf("index %d tag%d bo %d", bits_index, bits_tag, bits_block_offset);
+		
 		//allocate cacheeee/////
-		for(i=0;i<dways;i++){
-		 mycache=(newcache *) malloc( sizeof(newcache *)*(leksis*20));
+		mycache2=(newnwayAndfully *) malloc( sizeof(newnwayAndfully *)*(leksis*1000));
 
 		//initial cache
 			for(i=0;i<leksis;i++) {
 				for (j=0;j<megethos_block;j++){
-					mycache[i].ctag[j]=-1;
-				mycache[i].valid[j] = 0;
-				}
-			}
+					randomcounter +=1;
+					printf("counter value: %d\n", randomcounter);
+					mycache2[i].ctag[j]=-1;
+					mycache2[i].valid[j] = 0;
+					mycache2[i].FifoAndLru[j]=0;
+					mycache2[i].dirty[j]=0;
+					randomcounter1 +=1;
+					printf("counter value11111 is: %d\n", randomcounter1);}
     }
 		
 		printf("leksis!!!!!1: %d\n", leksis);
@@ -388,12 +424,20 @@ int main(){
 
 
 		 while (!feof(dedomena)){
+			 //initial meta apo ka8e entoli
 			 setadd = 0;
 			 totalset = 0;
 			 tagadd = 0;
 			 totaltag = 0;
 			 bladd = 0;
 			 totalbl = 0;
+			 ifhit=0;
+			 write_flag=0;
+			 flag_compulsory=1;
+			 flag_campacity=1;
+			 flag_conflict=0;
+
+
 			  fgets(buf1,MAX_CHARS_PER_LINE,dedomena);
 				command = strtok_s(buf1, DELIMITER, &a);
 				
@@ -402,7 +446,12 @@ int main(){
 					address=strtok_s(0, DELIMITER, &a);
 					address_atoi=atoi(address);
 					dec2bin(binary, address_atoi);
-					fprintf(out, "%s\t%s READ\t%d\t", command, address,address_atoi );
+					if (command[0]=='R'){
+						fprintf(out, "%s\t%s READ\t%d\t", command, address,address_atoi );}
+					else if (command[0]=='M'){
+						fprintf(out, "%s\t%s MODIFY\t%d\t", command, address,address_atoi );}
+					else if (command[0]=='W'){
+						fprintf(out, "%s\t%s WRITE\t%d\t", command, address,address_atoi );}
 					for(j=bits_addressing-1;j>=0;j--) {
 						  fprintf(out, "%d ",binary[j]);
 					   }
@@ -424,7 +473,8 @@ int main(){
 						  
 					   }
 					fprintf(out, "\n");
-				
+
+				if (eidos==1){ //an einai direct
 					//Convert set bits from char array into ints
 					for(q = 0, p = (bits_index -1); q < bits_index; q ++, p--) {
 						if (sbits[q] == '1')
@@ -434,6 +484,7 @@ int main(){
 					    setadd = setadd * pow(2, p);
 					    totalset += setadd;
 				  }
+				}
 					printf("totalset %d\n", totalset);
 
 					//CONVERT TAG BITS
@@ -460,17 +511,18 @@ int main(){
 					
 					printf("totalblockoffset %d\n", totalbl);
 
+					//...........................................................
+					//AN EINAI DIRECT MAPPED
+					//...........................................................
 
-
-
-
-
+				if (eidos==1){ 
 					if ((command[0]=='R')||(command[0]=='M')){  //Calculating Hits and Misses an einai read
 			    	
 						if ((mycache[totalset].valid[totalbl] == 1) && (mycache[totalset].ctag[totalbl]==totaltag))
 						  {  // Hit 
 						   cacheHit++;
 						   read++;
+						   fprintf(out, "гит\n");
 							}
 						 else {   // Miss (cache entry invalid, or wrong tag) 
 							 if (mycache[totalset].valid[totalbl] == 0){
@@ -493,6 +545,7 @@ int main(){
 						  {  // Hit 
 						  cacheHit++;
 						   write++;
+						   fprintf(out, "гит\n");
 						  }
 					  else
 						 { // Miss (cache entry invalid, or wrong tag) 
@@ -502,6 +555,128 @@ int main(){
 						   mycache[totalset].ctag[totalbl]=totaltag;
 						 }
 					}
+
+				} //end off an einai direct
+
+				//.................................
+				//an einai fully
+				//.................................
+				if (eidos==3){
+					if ((command[0]=='R')||(command[0]=='M')||(command[0]=='W')){  //Calculating Hits and Misses an einai read
+						if ((command[0]=='R')||(command[0]=='M')){
+											 read++;}
+										 if (command[0]=='W'){
+											 write++;}
+						for(i=0;(i<dways)&&(ifhit==0);i++){
+								if ((mycache2[i].valid[totalbl] == 1) && (mycache2[i].ctag[totalbl]==totaltag)){ 
+									// Hit 
+									if (politiki_antikatastasis==2){
+										mycache2[i].FifoAndLru[totalbl]=helpcounter_fifo_and_lru;}
+						   cacheHit++;
+						   fprintf(out, "гит\n");
+						   ifhit=1;
+								}}
+
+								if (ifhit==0) {   // Miss (cache entry invalid, or wrong tag) 
+									for(i=0;(i<dways)&&(ifhit==0);i++){
+									if ((mycache2[i].valid[totalbl] != 0)){
+										flag_compulsory=0;
+									}
+									if((mycache2[i].valid[totalbl]==0)){
+										flag_campacity=0;}
+									
+									if ((mycache2[i].valid[totalbl] == 1) && (mycache2[i].ctag[totalbl]!=totaltag)){
+										flag_conflict=1;}
+									}
+
+
+									if (flag_compulsory==1){
+										 compulsory=compulsory+1;
+										 cacheMiss++;
+										 fprintf(out, "miss! type: compulsory\n");			 
+										 if (command[0]=='W'){
+											  for(k=0; ((k<dways)&&(write_flag!=1));k++){
+											  if (mycache2[k].valid[totalbl]==0){
+												  mycache2[k].valid[totalbl] = 1;
+												  mycache2[k].ctag[totalbl]=totaltag; //
+												  mycache2[i].FifoAndLru[totalbl]=helpcounter_fifo_and_lru;
+												  write_flag=1;}
+											}
+										 }
+									} //end of an einai compulsory
+
+
+									if (flag_campacity==1){
+										 capacity=capacity+1;
+										 fprintf(out, "miss! type: capacity\n");
+										 if (politiki_antikatastasis==3){
+											 deiktis_ekdiwksis=rand()%dways;}
+										 if ((politiki_antikatastasis==1)||(politiki_antikatastasis==2)){
+											 min=999999999;
+											 for(k=0; k<dways;k++){
+												 if (mycache2[k].FifoAndLru[totalbl]<min){
+													 min=mycache2[k].FifoAndLru[totalbl];
+												 }
+											 }
+											 deiktis_ekdiwksis=min;
+										 }
+										  if (command[0]=='W'){
+											  mycache2[deiktis_ekdiwksis].valid[totalbl] = 1;
+											  mycache2[deiktis_ekdiwksis].ctag[totalbl]=totaltag; //
+											  mycache2[i].FifoAndLru[totalbl]=helpcounter_fifo_and_lru;
+											  write_flag=1;
+											
+										 }
+										 cacheMiss++;
+										 } //end of an einai campacity
+
+
+
+									if ((flag_conflict==1)&&(flag_campacity!=1)&&(flag_compulsory!=1)){
+										 conflict=conflict+1;
+										  cacheMiss++;
+										 fprintf(out, "miss! type: conflict\n");
+										 if (command[0]=='W'){
+										 for(k=0; ((k<dways)&&(write_flag!=1));k++){
+										 if (mycache2[k].valid[totalbl]==0){
+												  mycache2[k].valid[totalbl] = 1;
+												  mycache2[k].ctag[totalbl]=totaltag; //
+												  mycache2[i].FifoAndLru[totalbl]=helpcounter_fifo_and_lru;
+												  write_flag=1;}
+										 }
+
+										if (write_flag==0){
+											if (politiki_antikatastasis==3){
+												 deiktis_ekdiwksis=rand()%dways;}
+											if ((politiki_antikatastasis==1)||(politiki_antikatastasis==2)){
+											 min=999999999;
+											 for(k=0; k<dways;k++){
+												 if (mycache2[k].FifoAndLru[totalbl]<min){
+													 min=mycache2[k].FifoAndLru[totalbl];
+												 }
+											 }
+											 deiktis_ekdiwksis=min;
+											 }
+										    printf("deiktis ekdiwksis: %d", deiktis_ekdiwksis);
+										    mycache2[deiktis_ekdiwksis].valid[totalbl] = 1;
+											mycache2[deiktis_ekdiwksis].ctag[totalbl]=totaltag; //
+											mycache2[i].FifoAndLru[totalbl]=helpcounter_fifo_and_lru;
+											write_flag=1;	
+										 }
+										 }
+										
+										 } //end of an einai conflict
+
+
+					
+							 } //end of miss
+
+							
+					//	} //loop
+					}
+				}
+
+
 
 
 				}
@@ -514,19 +689,32 @@ int main(){
 				else if (command[0]=='F')
 				{
 					//initial cache
-	
-					for(i=0;i<leksis;i++) {
-					for (j=0;j<megethos_block;j++){
-					mycache[i].ctag[j]=-1;
-					mycache[i].valid[j] = 0;
+				  if (eidos==1){ //an einai direct mapped
+						for(i=0;i<leksis;i++) {
+							for (j=0;j<megethos_block;j++){
+							mycache[i].ctag[j]=-1;
+							mycache[i].valid[j] = 0;}
+						}
 					}
-		
-    }
 
+				  if (eidos==3){
+					  //initial cache
+			for(i=0;i<dways;i++) {
+				for (j=0;j<megethos_block;j++){
+					randomcounter +=1;
+					mycache2[i].ctag[j]=-1;
+					mycache2[i].valid[j] = 0;
+					mycache2[i].dirty[j]=0;
+					mycache2[i].FifoAndLru[j]=0;
+					randomcounter1 +=1;
+    }
+				  }
+				  }
 					fprintf(out, "%sFLUSH\n", command );	
+					helpcounter_fifo_and_lru=0;
 				}
 				
-				
+				helpcounter_fifo_and_lru=helpcounter_fifo_and_lru+1;
 				}
 				
 		 fclose(dedomena); //klisimo arxeiou
@@ -546,7 +734,10 @@ int main(){
 		 printf("missrate: %.2f tis ekato\n", missrate);
 		 printf("hitrate: %.2f tis ekato\n", hitrate);
 
-		 free(mycache);
+		 if (eidos==1){
+			 free(mycache);}
+		 if (eidos==3){
+			 free(mycache2);}
 		
 			 
 		 
